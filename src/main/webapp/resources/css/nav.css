@@ -1,0 +1,40 @@
+.nav {
+  position: absolute;
+  top: 70px;
+  left: 931px;
+  margin-top: 10px;
+}
+
+.nav__profile {
+  top: 108px;
+}
+.nav__diary {
+  top: 146px;
+}
+.nav__gallary {
+  top: 184px;
+}
+.nav__board {
+  top: 222px;
+}
+.nav__guest {
+  top: 260px;
+}
+.nav__setting {
+  top: 298px;
+}
+
+.nav {
+  background-color: #238db3;
+  width: 65px;
+  height: 35px;
+  border: 1px solid #111111;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+}
