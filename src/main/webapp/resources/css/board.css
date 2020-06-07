@@ -1,0 +1,11 @@
+.context2-wrapper {
+  margin: 20px auto;
+  width : 610px;
+}
+
+.context2__insertForm textarea {
+  width: 600px;
+  height: 360px;
+  resize: none;
+  overflow: auto;
+}

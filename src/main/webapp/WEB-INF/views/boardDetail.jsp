@@ -43,50 +43,34 @@
 						</div>
 						<div class="context2__main" style="overflow: auto;">
 							<!--이부분만 바뀜-->
-							<div class="context2__insert">
-								<div class="context2__insert-Btn">
-									<i class="fas fa-pencil-alt" onclick="location.href = '${cp}/board/${path}/insert/'"></i>
-									글쓰기
-								</div>
+							<div class="main__title">
+								<span>${board.title }</span>
 							</div>
-							<table>
-								<tr class="table__firstRow">
-									<th class="table__check"></th>
-									<th class="table__bnum">번호</th>
-									<th class="table__title">제목</th>
-									<th class="table__writer">작성자</th>
-									<th class="table__time">작성일</th>
-									<th class="table__views">조회</th>
-								</tr>
-								<c:forEach var="vo" items="${list }">
-									<tr>
-										<td>
-											<form action="method">
-												<input type="checkbox" value="${vo.bnum}">
-											</form>
-										</td>
-										<td>${vo.bnum }</td>
-										<td><a href="${cp}/board/${path }/${vo.bnum}/">${vo.title }</a></td>
-										<td>${vo.writer }</td>
-										<td>
-											<fmt:formatDate value="${vo.time }" pattern="yyyy.MM.dd" />
-										</td>
-										<td>${vo.views }</td>
-									</tr>
-								</c:forEach>
-							</table>
-							<div class="context2__menu">
-								<div class="context2__delete-Btn">
-									<i class="fas fa-eraser"></i>
-									삭제
-								</div>
-								<div class="context2__insert-Btn" onclick="location.href = '${cp}/board/${path}/insert/'">
-									<i class="fas fa-pencil-alt"></i>
-									글쓰기
-								</div>
+							<div class="main__profile">
+								<div>${board.writer }</div>
+								<div>${board.time }</div>
 							</div>
-						</div>
+							<div class="main__context">
+								<textarea readonly="readonly">
+									${board.context }
+								</textarea>
+							</div>
+							<div class="main__des">
+								<a href="${cp }/board/${path}/${board.bnum}/update/">수정</a>
+								<a href="${cp }/board/${path}/${board.bnum}/move/">이동</a> <!-- DB에서 다른 보드로 이동 구현 -->
+								<a href="${cp }/board/${path}/${board.bnum}/delete/">삭제</a>
+							</div>
+							
+							<div class="main__comment">
+								<form method="post">
+									<div>댓글</div>
+									<input type="text" name="comment">
+									<input type="submit" value="확인">
+								</form>
+							</div>
+							
 						<!--이까지-->
+						</div>
 						<div class="nav__home nav" onclick="location.href = '${cp}/'">
 							홈</div>
 						<div class="nav__profile nav"

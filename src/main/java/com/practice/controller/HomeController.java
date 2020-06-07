@@ -12,6 +12,7 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView home() {
 		ModelAndView mv = new ModelAndView("home");
+		// AWS S3로 대체 가능 (정적 프론트 파일들)
 		mv.addObject("defaultPic","/img/profile_pic.jpg");
 		
 		return mv;

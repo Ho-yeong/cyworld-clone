@@ -1,0 +1,136 @@
+main {
+  width: 960px;
+  height: 640px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.main1 {
+  width: 240px;
+  height: 640px;
+  border: 1px solid #111111;
+  border-radius: 10px;
+  border-right: none;
+  padding: 15px;
+  padding-right: 0;
+  background-color: #acd2dd;
+}
+.main2 {
+  width: 720px;
+  height: 640px;
+  border: 1px solid #111111;
+  border-radius: 10px;
+  border-left: none;
+  padding: 15px;
+  padding-left: 0;
+  background-color: #acd2dd;
+}
+
+.wrapper,
+.wrapper_1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  border: 1px dashed white;
+  padding: 5px;
+}
+
+.wrapper2,
+.wrapper2_1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  background-color: #f0f0f0;
+  padding: 5px;
+  grid-gap: 1%;
+  border: 1px solid #d6d6d6;
+}
+.wrapper,
+.wrapper2 {
+  padding-right: 0;
+  border-right: none;
+}
+
+.wrapper_1,
+.wrapper2_1 {
+  padding-left: 0;
+  border-left: none;
+}
+
+.context1 {
+  width: 97%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.07fr 0.93fr;
+}
+.context1__visitor {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.context1__profile {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #111111;
+  border-radius: 11px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__pic {
+  width: 100%;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.profile__pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile__context {
+  margin-top: 5px;
+  width: 100%;
+  height: 210px;
+  border: 1px solid black;
+}
+.profile__profile {
+  margin-top: 5px;
+  width: 100%;
+  height: 70px;
+  border: 1px solid black;
+}
+.profile__ilchon {
+  margin-top: 5px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.context2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.07fr 0.93fr;
+}
+
+.context2__title {
+  height: 100%;
+  width: 100%;
+}
+
+.context2__main {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #111111;
+  border-radius: 1.5%;
+  background-color: white;
+  box-shadow: 6px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  z-index: 8;
+}
